@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article>
+  <header class="page-head">
+    {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose">{{ .Content }}</div>
+  {{ if .Parent }}{{ if ne .Parent.Kind "home" }}
+  <nav class="pager">
+    {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>{{ end }}
+    <a href="{{ .Parent.RelPermalink }}">All tracks</a>
+    {{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>{{ end }}
+  </nav>
+  {{ end }}{{ end }}
+</article>
+{{ end }}

@@ -1,0 +1,12 @@
+- name: Specify
+  body: A metadata standard becomes a versioned YAML profile - entity types, fields, hierarchy, validation rules.
+- name: Capture
+  body: The hub generates entry forms and tables from the profile.
+- name: Validate
+  body: Required fields, patterns, ranges, uniqueness and references are checked against the profile.
+- name: Share
+  body: Datasets are shared with colleagues as viewer or editor.
+- name: Export
+  body: ISA-JSON, Excel, a DCAT catalogue record, or a push into FAIRDOM-SEEK.
+- name: Revise
+  body: What users learn feeds a new profile version. A version-bump gate keeps existing datasets valid.

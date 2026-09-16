@@ -1,0 +1,20 @@
+{{ define "main" }}
+<header class="page-head">
+  {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+</header>
+<div class="prose">{{ .Content }}</div>
+<section class="tracks">
+  {{ range .Pages.ByWeight }}
+  <a class="track" href="{{ .RelPermalink }}">
+    <span class="track-key">{{ .Params.key }}</span>
+    <div>
+      <h3>{{ .Title }}</h3>
+      <p class="role">{{ .Params.role }}</p>
+      <p>{{ .Description }}</p>
+    </div>
+  </a>
+  {{ end }}
+</section>
+{{ end }}

@@ -1,0 +1,18 @@
+<div class="timeline" role="img" aria-label="Session timeline, 50 minutes">
+  {{ range $i, $b := hugo.Data.agenda }}
+  <span class="seg seg-{{ $i }}" style="flex: {{ sub $b.end $b.start }}"><em>{{ $b.start }}</em>{{ $b.title }}</span>
+  {{ end }}
+</div>
+<ol class="agenda">
+  {{ range $i, $b := hugo.Data.agenda }}
+  <li class="slot seg-{{ $i }}">
+    <div class="time">{{ $b.start }}&ndash;{{ $b.end }}<small>min</small></div>
+    <div>
+      <h3>{{ $b.title }}</h3>
+      <p class="format">{{ $b.format }}</p>
+      <p>{{ $b.body }}</p>
+      {{ with $b.link }}<p><a href="{{ . | relURL }}">Details &rarr;</a></p>{{ end }}
+    </div>
+  </li>
+  {{ end }}
+</ol>

@@ -1,0 +1,40 @@
+baseURL = "/"
+locale = "en"
+title = "Metaseed Hub breakout"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[params]
+event = "FAIR in action: building a sustainable cycle in LSH"
+duration = "50 min"
+audience = "Open to anyone interested in the topic"
+hub_url = "https://metaseed.ewi.tudelft.nl"
+docs_url = "https://sorenwacker.github.io/metaseed-hub/"
+
+[menus]
+  [[menus.main]]
+    name = "Session"
+    pageRef = "/"
+    weight = 10
+  [[menus.main]]
+    name = "Cycle"
+    pageRef = "/cycle"
+    weight = 20
+  [[menus.main]]
+    name = "Agenda"
+    pageRef = "/agenda"
+    weight = 30
+  [[menus.main]]
+    name = "Tracks"
+    pageRef = "/tracks"
+    weight = 40
+  [[menus.main]]
+    name = "Discussion"
+    pageRef = "/discussion"
+    weight = 50
+  [[menus.main]]
+    name = "Preparation"
+    pageRef = "/preparation"
+    weight = 60
+
+[markup.goldmark.renderer]
+unsafe = true

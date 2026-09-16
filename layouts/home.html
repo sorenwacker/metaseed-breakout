@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="hero">
+  <p class="eyebrow">Breakout session &middot; {{ site.Params.event }}</p>
+  <h1>{{ .Params.headline }}</h1>
+  <p class="lede">{{ .Params.lede }}</p>
+  <ul class="facts">
+    <li><strong>{{ site.Params.duration }}</strong><span>length</span></li>
+    <li><strong>4 tracks</strong><span>laptop optional</span></li>
+    <li><strong>Open</strong><span>no prior knowledge</span></li>
+  </ul>
+</section>
+<div class="prose">{{ .Content }}</div>
+<section class="cards">
+  {{ range where site.RegularPages "Params.card" true }}
+  <a class="card" href="{{ .RelPermalink }}">
+    <h3>{{ .Title }}</h3>
+    <p>{{ .Description }}</p>
+  </a>
+  {{ end }}
+</section>
+{{ end }}

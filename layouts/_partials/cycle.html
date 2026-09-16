@@ -1,0 +1,25 @@
+{{- $steps := hugo.Data.cycle -}}
+{{- $n := len $steps -}}
+{{- $c := 260.0 -}}{{- $r := 180.0 -}}
+<figure class="cycle">
+  <svg viewBox="0 0 520 520" role="img" aria-labelledby="cycle-title">
+    <title id="cycle-title">The FAIR metadata cycle: {{ delimit (apply $steps "index" "." "name") ", " }}, then back to the start</title>
+    <circle class="ring" cx="{{ $c }}" cy="{{ $c }}" r="{{ $r }}"/>
+    {{- range $i, $s := $steps }}
+      {{- $mid := math.ToRadians (add -60.0 (mul $i 60.0)) -}}
+      {{- $mx := add $c (mul $r (math.Cos $mid)) -}}{{- $my := add $c (mul $r (math.Sin $mid)) -}}
+      <path class="arrow" d="M-7,-7 L7,0 L-7,7 Z" transform="translate({{ $mx }} {{ $my }}) rotate({{ add -60 (mul $i 60) 90 }})"/>
+    {{- end }}
+    {{- range $i, $s := $steps }}
+      {{- $a := math.ToRadians (add -90.0 (mul $i 60.0)) -}}
+      {{- $x := add $c (mul $r (math.Cos $a)) -}}{{- $y := add $c (mul $r (math.Sin $a)) -}}
+      <g class="node{{ if eq $i (sub $n 1) }} node-accent{{ end }}">
+        <circle cx="{{ $x }}" cy="{{ $y }}" r="52"/>
+        <text x="{{ $x }}" y="{{ sub $y 8 }}" class="num">{{ add $i 1 }}</text>
+        <text x="{{ $x }}" y="{{ add $y 14 }}" class="label">{{ $s.name }}</text>
+      </g>
+    {{- end }}
+    <text x="{{ $c }}" y="{{ sub $c 6 }}" class="center">one profile</text>
+    <text x="{{ $c }}" y="{{ add $c 18 }}" class="center">many tools</text>
+  </svg>
+</figure>

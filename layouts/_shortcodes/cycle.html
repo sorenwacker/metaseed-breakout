@@ -1,0 +1,4 @@
+{{ partial "cycle.html" . }}
+<ol class="cycle-list">
+  {{ range hugo.Data.cycle }}<li><strong>{{ .name }}.</strong> {{ .body }}</li>{{ end }}
+</ol>
