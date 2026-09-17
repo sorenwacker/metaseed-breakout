@@ -36,6 +36,10 @@ docs_url = "https://sorenwacker.github.io/metaseed-hub/"
     pageRef = "/tracks"
     weight = 40
   [[menus.main]]
+    name = "Tutorials"
+    pageRef = "/tutorials"
+    weight = 45
+  [[menus.main]]
     name = "Discussion"
     pageRef = "/discussion"
     weight = 50

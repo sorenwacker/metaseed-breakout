@@ -9,7 +9,7 @@
   {{ if .Parent }}{{ if ne .Parent.Kind "home" }}
   <nav class="pager">
     {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>{{ end }}
-    <a href="{{ .Parent.RelPermalink }}">All tracks</a>
+    <a href="{{ .Parent.RelPermalink }}">All {{ lower .Parent.Title }}</a>
     {{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>{{ end }}
   </nav>
   {{ end }}{{ end }}

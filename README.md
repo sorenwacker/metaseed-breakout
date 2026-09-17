@@ -14,7 +14,7 @@ make check   # build with warnings as errors, then fail on broken local links
 
 - `data/agenda.yaml` - time slots; drives the timeline and the agenda page.
 - `data/cycle.yaml` - the six cycle steps; drives the cycle diagram.
-- `content/` - abstract, cycle text, tracks, discussion questions, preparation checklist.
+- `content/` - abstract, background, lessons learned, cycle text, tracks, tutorials, discussion questions, preparation checklist.
 - `hugo.toml` - event name, duration, hub and documentation links, menu.
 
 Requires Hugo extended 0.146 or later.
