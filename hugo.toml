@@ -16,6 +16,14 @@ docs_url = "https://sorenwacker.github.io/metaseed-hub/"
     pageRef = "/"
     weight = 10
   [[menus.main]]
+    name = "Background"
+    pageRef = "/background"
+    weight = 15
+  [[menus.main]]
+    name = "Lessons"
+    pageRef = "/lessons"
+    weight = 17
+  [[menus.main]]
     name = "Cycle"
     pageRef = "/cycle"
     weight = 20
