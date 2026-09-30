@@ -4,9 +4,8 @@ title = "Metaseed Hub breakout"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
 
 [params]
-event = "FAIR in action: building a sustainable cycle in LSH"
+event = "FAIR in Action: Building a Sustainable FAIR Future in Life Science and Health"
 duration = "50 min"
-audience = "Open to anyone interested in the topic"
 hub_url = "https://metaseed.ewi.tudelft.nl"
 docs_url = "https://sorenwacker.github.io/metaseed-hub/"
 
@@ -16,29 +15,21 @@ docs_url = "https://sorenwacker.github.io/metaseed-hub/"
     pageRef = "/"
     weight = 10
   [[menus.main]]
-    name = "Background"
-    pageRef = "/background"
-    weight = 15
+    name = "Agenda"
+    pageRef = "/agenda"
+    weight = 12
   [[menus.main]]
-    name = "Lessons"
-    pageRef = "/lessons"
-    weight = 17
+    name = "Presentation"
+    pageRef = "/presentation"
+    weight = 15
   [[menus.main]]
     name = "Cycle"
     pageRef = "/cycle"
     weight = 20
   [[menus.main]]
-    name = "Agenda"
-    pageRef = "/agenda"
-    weight = 30
-  [[menus.main]]
     name = "Tracks"
     pageRef = "/tracks"
     weight = 40
-  [[menus.main]]
-    name = "Tutorials"
-    pageRef = "/tutorials"
-    weight = 45
   [[menus.main]]
     name = "Discussion"
     pageRef = "/discussion"
@@ -47,6 +38,11 @@ docs_url = "https://sorenwacker.github.io/metaseed-hub/"
     name = "Preparation"
     pageRef = "/preparation"
     weight = 60
+
+[outputFormats.slides]
+baseName = "slides"
+mediaType = "text/html"
+isHTML = true
 
 [markup.goldmark.renderer]
 unsafe = true

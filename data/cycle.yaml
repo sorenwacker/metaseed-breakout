@@ -7,6 +7,6 @@
 - name: Share
   body: Datasets are shared with colleagues as viewer or editor.
 - name: Export
-  body: ISA-JSON, Excel, a DCAT catalogue record, or a push into FAIRDOM-SEEK.
+  body: Excel, a DCAT catalogue record, a repository submission format such as PRIDE, or a push into FAIRDOM-SEEK.
 - name: Revise
-  body: What users learn feeds a new profile version. A version-bump gate keeps existing datasets valid.
+  body: What users learn feeds a new profile version. A version-bump gate refuses a release whose version number understates a breaking change, and existing datasets stay on the version they were built with.

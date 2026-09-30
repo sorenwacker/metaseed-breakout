@@ -1,13 +1,14 @@
 - start: 0
-  end: 5
-  title: Opening
-  format: Poll or show of hands
-  body: One slide with the cycle. Question to the room - where does metadata get lost in your work?
-- start: 5
+  end: 7
+  title: Opening and introduction
+  format: Presenter, then a show of hands
+  body: The introductory part of the presentation, up to the lessons learned - what metadata and specifications are, why specifications are hard to compare, and what metaseed does. Question to the room - where does metadata get lost in your work?
+  link: /presentation
+- start: 7
   end: 15
   title: Live demo of one full cycle
   format: Presenter, with a recorded video as backup
-  body: Create a MIAPPE 1.2 dataset, fill in two entities, fix a validation error, share it, export ISA-JSON. Clone the profile, add a field, publish v1.1. The existing dataset stays pinned to v1.0.
+  body: Create a MIAPPE 1.2 dataset, fill in two entities, fix a validation error, share it, export it to Excel and open its DCAT record. Clone the profile, add a field and publish the result as a new specification. The existing dataset stays bound to MIAPPE 1.2.
 - start: 15
   end: 35
   title: Hands-on tracks
@@ -16,9 +17,9 @@
   link: /tracks
 - start: 35
   end: 46
-  title: Discussion on sustainability
-  format: Whole room, notes on a shared board
-  body: Three or four questions about who maintains a standard, what counts as a breaking change, and where the hub fits.
+  title: Lessons learned and discussion
+  format: Presenter, then whole room with notes on a shared board
+  body: Six lessons from the fellowship in three minutes. Then three or four questions about who maintains a standard, what counts as a breaking change, and where the hub fits.
   link: /discussion
 - start: 46
   end: 50

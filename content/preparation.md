@@ -8,13 +8,13 @@ weight: 50
 
 ## Checklist
 
-- Pre-create workshop accounts (roughly 30) or a shared sign-in. International attendees may not have SRAM or SURFconext.
+- Sign-in goes through SRAM with an institutional account; there are no workshop accounts. Test beforehand that participants from outside the Netherlands can sign in, and plan to pair up those who cannot.
 - Use a separate workshop instance, or plan a cleanup, so the production hub does not fill up with test datasets.
 - Check beforehand that the instance handles about 30 people signing in at once.
-- Build the example dataset with deliberate errors (track A), the lab checklist handout (track B), and a token how-to (track C).
+- Build the example dataset with deliberate errors (track A), a list of extra sequencing variables and their constraints (track B), and a token how-to and a short methods paragraph as a handout (track C).
 - Record the demo as a backup in case the Wi-Fi or live instance fails.
 - Print the cycle poster, bring sticky notes, and prepare QR codes for the hub, docs and a sign-up form.
-- Arrange a co-facilitator. One person cannot support three groups at once.
+- Arrange a co-facilitator. One person cannot support four tracks at once.
 
 ## State openly
 

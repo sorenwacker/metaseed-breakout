@@ -1,9 +1,9 @@
 ---
 title: Agenda
 eyebrow: 50 minutes
-description: Ten minutes of demo, twenty of hands-on work, and the rest on discussion.
+description: Seven minutes of introduction, eight of demo, twenty of hands-on work, and the rest on lessons learned and discussion.
 card: true
-weight: 20
+weight: 3
 ---
 
 {{< agenda >}}
