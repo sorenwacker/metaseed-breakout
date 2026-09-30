@@ -8,6 +8,12 @@ weight: 5
 outputs: [html, slides]
 ---
 
+## The fellowship
+
+- TDCC-LSH FAIR Fellowship, one year, one day per week.
+- Goals: combine ISA and MIAPPE; let people and AI agents work with the same metadata.
+- The starting assumption: "MIAPPE is a profile of ISA".
+
 ## What is metadata
 
 - Metadata is data that describes other data: who produced it, from what material, how, when and under which conditions.
@@ -38,12 +44,6 @@ outputs: [html, slides]
 - Which would you like to have available as a profile?
 - The answers go on the shared board and come back in the discussion.
 
-## The fellowship
-
-- TDCC-LSH FAIR Fellowship, one year, one day per week.
-- Goals: combine ISA and MIAPPE; let people and AI agents work with the same metadata.
-- The starting assumption: "MIAPPE is a profile of ISA".
-
 ## Specifications are hard to compare
 
 - Each specification is published in its own form: MIAPPE as a checklist, ISA as an abstract model with tabular and JSON serialisations, JERM as an ontology.
@@ -71,12 +71,6 @@ outputs: [html, slides]
 - The Model Context Protocol (MCP) is an open standard through which an AI agent calls tools that a server offers.
 - The metaseed MCP server offers tools to list profiles and read their schema, to create and update entities, and to validate a dataset.
 - An agent therefore works with the same profile and the same validation as a person in the web UI. It is instructed to record only what the source states and to leave unknown fields empty.
-
-## Current limits
-
-- No binary or union field types.
-- No custom code in validation rules.
-- Profiles are trees, not general graphs; the fifth lesson returns to this.
 
 ## From standard to dataset and back
 
@@ -132,6 +126,7 @@ Six findings: three about the standards, two about building tools on them, and o
 - In a metaseed profile each entity is nested under one parent, and a link to any other entity is a string reference.
 - Not every standard fits a tree. An ISA process is a graph in which a sample can derive from several sources and feed several assays.
 - Opening the profile model to arbitrary graphs is under consideration.
+- Other current limits: no binary or union field types, and no custom code in validation rules.
 
 {{< diagram name="tree-graph" caption="Part of the MIAPPE profile as a tree with one reference, next to an ISA process in which a sample has two parents." >}}
 
