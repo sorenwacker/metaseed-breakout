@@ -1,0 +1,35 @@
+<svg viewBox="0 0 560 230" role="img" aria-labelledby="tree-graph-title">
+  <title id="tree-graph-title">A tree gives each entity one parent and adds cross-links as references; in a graph a sample can derive from two sources and feed two assays</title>
+  <text class="head" x="135" y="24" text-anchor="middle">Tree</text>
+  <path class="edge" d="M135,75 L80,115 M135,75 L200,115 M80,145 L65,185 M80,145 L210,185"/>
+  <path class="edge edge-accent edge-dashed" d="M175,200 H135"/>
+  <path class="tip tip-accent" d="M0,0 l-10,-5 v10 z" transform="translate(125 200) rotate(180)"/>
+  <text class="small" x="150" y="226" text-anchor="middle">reference</text>
+  <rect class="box" x="85" y="45" width="100" height="30" rx="8"/>
+  <text x="135" y="65" text-anchor="middle">Investigation</text>
+  <rect class="box" x="40" y="115" width="80" height="30" rx="8"/>
+  <text x="80" y="135" text-anchor="middle">Study</text>
+  <rect class="box" x="160" y="115" width="80" height="30" rx="8"/>
+  <text x="200" y="135" text-anchor="middle">Person</text>
+  <rect class="box" x="5" y="185" width="120" height="30" rx="8"/>
+  <text x="65" y="205" text-anchor="middle">Observation unit</text>
+  <rect class="box" x="175" y="185" width="70" height="30" rx="8"/>
+  <text x="210" y="205" text-anchor="middle">Event</text>
+
+  <text class="head" x="420" y="24" text-anchor="middle">Graph</text>
+  <path class="edge" d="M360,75 L399,110 M480,75 L441,110 M405,145 L366,180 M435,145 L474,180"/>
+  <path class="tip" d="M0,0 l-10,-5 v10 z" transform="translate(405 115) rotate(41.6)"/>
+  <path class="tip" d="M0,0 l-10,-5 v10 z" transform="translate(435 115) rotate(138.4)"/>
+  <path class="tip" d="M0,0 l-10,-5 v10 z" transform="translate(360 185) rotate(138.4)"/>
+  <path class="tip" d="M0,0 l-10,-5 v10 z" transform="translate(480 185) rotate(41.6)"/>
+  <rect class="box" x="320" y="45" width="80" height="30" rx="8"/>
+  <text x="360" y="65" text-anchor="middle">Source</text>
+  <rect class="box" x="440" y="45" width="80" height="30" rx="8"/>
+  <text x="480" y="65" text-anchor="middle">Source</text>
+  <rect class="box box-accent" x="380" y="115" width="80" height="30" rx="8"/>
+  <text x="420" y="135" text-anchor="middle">Sample</text>
+  <rect class="box" x="320" y="185" width="80" height="30" rx="8"/>
+  <text x="360" y="205" text-anchor="middle">Assay</text>
+  <rect class="box" x="440" y="185" width="80" height="30" rx="8"/>
+  <text x="480" y="205" text-anchor="middle">Assay</text>
+</svg>

@@ -1,14 +1,7 @@
 <!doctype html>
 <html lang="{{ site.Language.Locale }}">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.event }}{{ end }}">
-  <link rel="icon" href="{{ "images/metaseed-icon.svg" | relURL }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  {{ with resources.Get "css/main.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+  {{ partial "head.html" . }}
 </head>
 <body>
   <header class="site-header">
@@ -23,6 +16,7 @@
         <a href="{{ .URL }}"{{ if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) (eq $current.RelPermalink .URL) }} aria-current="page"{{ end }}>{{ .Name }}</a>
         {{ end }}
       </nav>
+      {{ partial "theme-toggle.html" . }}
     </div>
   </header>
   <main class="wrap">

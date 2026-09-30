@@ -1,0 +1,7 @@
+{{- $name := .Get "name" -}}
+{{- $svg := resources.Get (printf "diagrams/%s.svg" $name) -}}
+{{- if not $svg }}{{ errorf "diagram %q not found in assets/diagrams (%s)" $name .Position }}{{ end -}}
+<figure class="diagram">
+  {{ $svg.Content | safeHTML }}
+  {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>

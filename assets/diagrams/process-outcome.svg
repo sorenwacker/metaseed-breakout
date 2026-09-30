@@ -1,0 +1,27 @@
+<svg viewBox="0 0 560 306" role="img" aria-labelledby="process-outcome-title">
+  <title id="process-outcome-title">ISA links source, sample and data file through processes; MIAPPE nests observation units, observed variables and data files under a study</title>
+  <text class="head" x="20" y="24">ISA models the process</text>
+  <line class="edge edge-accent" x1="140" y1="62" x2="212" y2="62"/>
+  <path class="tip tip-accent" d="M0,0 l-10,-5 v10 z" transform="translate(220 62)"/>
+  <line class="edge edge-accent" x1="340" y1="62" x2="412" y2="62"/>
+  <path class="tip tip-accent" d="M0,0 l-10,-5 v10 z" transform="translate(420 62)"/>
+  <text class="small" x="180" y="52" text-anchor="middle">process</text>
+  <text class="small" x="380" y="52" text-anchor="middle">process</text>
+  <rect class="box" x="20" y="40" width="120" height="44" rx="8"/>
+  <text x="80" y="67" text-anchor="middle">Source</text>
+  <rect class="box" x="220" y="40" width="120" height="44" rx="8"/>
+  <text x="280" y="67" text-anchor="middle">Sample</text>
+  <rect class="box" x="420" y="40" width="120" height="44" rx="8"/>
+  <text x="480" y="67" text-anchor="middle">Data file</text>
+
+  <text class="head" x="20" y="150">MIAPPE models the outcome</text>
+  <path class="edge" d="M140,188 H180 M180,184 V276 M180,184 H220 M180,230 H220 M180,276 H220"/>
+  <rect class="box" x="20" y="166" width="120" height="44" rx="8"/>
+  <text x="80" y="193" text-anchor="middle">Study</text>
+  <rect class="box box-accent" x="220" y="166" width="200" height="36" rx="8"/>
+  <text x="320" y="189" text-anchor="middle">Observation unit</text>
+  <rect class="box box-accent" x="220" y="212" width="200" height="36" rx="8"/>
+  <text x="320" y="235" text-anchor="middle">Observed variable</text>
+  <rect class="box box-accent" x="220" y="258" width="200" height="36" rx="8"/>
+  <text x="320" y="281" text-anchor="middle">Data file</text>
+</svg>

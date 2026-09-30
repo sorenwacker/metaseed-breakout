@@ -1,0 +1,14 @@
+<svg viewBox="0 0 560 200" role="img" aria-labelledby="spec-spectrum-title">
+  <title id="spec-spectrum-title">A spectrum from a fixed specification through a modifiable one to none: tools get harder to build as researchers gain freedom to add columns and variables</title>
+  <line class="edge" x1="60" y1="56" x2="500" y2="56"/>
+  <circle class="box" cx="60" cy="56" r="9"/>
+  <circle class="box" cx="280" cy="56" r="9"/>
+  <circle class="box" cx="500" cy="56" r="9"/>
+  <text class="head" x="60" y="30" text-anchor="middle">Fixed</text>
+  <text class="head" x="280" y="30" text-anchor="middle">Modifiable</text>
+  <text class="head" x="500" y="30" text-anchor="middle">None</text>
+  <path class="wedge" d="M40,88 L520,100 L40,112 Z"/>
+  <text class="small" x="40" y="130">Tools are easier to build and perform better</text>
+  <path class="wedge wedge-accent" d="M520,146 L40,158 L520,170 Z"/>
+  <text class="small" x="520" y="188" text-anchor="end">Researchers can add their own columns and variables</text>
+</svg>

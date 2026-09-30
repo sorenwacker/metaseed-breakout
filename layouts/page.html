@@ -4,6 +4,7 @@
     {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+    {{ with .OutputFormats.Get "slides" }}<p class="slides-link"><a href="{{ .RelPermalink }}">View as slides &rarr;</a></p>{{ end }}
   </header>
   <div class="prose">{{ .Content }}</div>
   {{ if .Parent }}{{ if ne .Parent.Kind "home" }}

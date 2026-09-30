@@ -13,7 +13,7 @@
 <section class="cards">
   {{ range where site.RegularPages "Params.card" true }}
   <a class="card" href="{{ .RelPermalink }}">
-    <h3>{{ .Title }}</h3>
+    <h3>{{ .LinkTitle }}</h3>
     <p>{{ .Description }}</p>
   </a>
   {{ end }}

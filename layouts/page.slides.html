@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}" class="deck">
+<head>
+  {{ partial "head.html" . }}
+  {{ with resources.Get "js/slides.js" | minify }}<script>{{ .Content | safeJS }}</script>{{ end }}
+</head>
+<body>
+  {{- $parts := split .Content "<h2" }}
+  <main>
+    <section class="slide slide-title">
+      {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+      {{ index $parts 0 | safeHTML }}
+    </section>
+    {{- range after 1 $parts }}
+    <section class="slide">{{ printf "<h2%s" . | safeHTML }}</section>
+    {{- end }}
+  </main>
+  <footer class="deck-bar">
+    <a href="{{ .RelPermalink }}">&larr; {{ .LinkTitle }}</a>
+    <span class="deck-count"></span>
+    {{ partial "theme-toggle.html" . }}
+  </footer>
+</body>
+</html>
