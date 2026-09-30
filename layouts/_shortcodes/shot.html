@@ -1,4 +1,7 @@
+{{- $src := .Get "src" -}}
+{{- $img := resources.Get $src -}}
+{{- if not $img }}{{ errorf "screenshot %q not found in assets (%s)" $src .Position }}{{ end -}}
 <figure class="shot">
-  <img src="{{ .Get "src" | relURL }}" alt="{{ .Get "alt" }}" loading="lazy">
+  <img src="{{ ($img | fingerprint).RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Get "alt" }}" loading="lazy">
   {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
 </figure>
