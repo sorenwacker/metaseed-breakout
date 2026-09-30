@@ -11,7 +11,7 @@
       <h3>{{ $b.title }}</h3>
       <p class="format">{{ $b.format }}</p>
       <p>{{ $b.body }}</p>
-      {{ with $b.link }}<p><a href="{{ . | relURL }}">Details &rarr;</a></p>{{ end }}
+      {{ with $b.link }}{{ $target := site.GetPage . }}{{ if not $target }}{{ errorf "agenda link %q names no page" . }}{{ end }}<p><a href="{{ $target.RelPermalink }}">Details &rarr;</a></p>{{ end }}
     </div>
   </li>
   {{ end }}

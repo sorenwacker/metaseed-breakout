@@ -7,8 +7,12 @@ Session plan for a 50-minute breakout on Metaseed Hub at "FAIR in Action: Buildi
 ```bash
 make dev     # hugo server with live reload at http://localhost:1313
 make build   # static output in public/, with pages of removed content deleted
-make check   # build into .check/ with warnings as errors, then fail on broken local links, a missing theme switch or an incomplete slide view
+make check   # build into .check/ with warnings as errors, then fail on broken or unprefixed local links, a missing theme switch or an incomplete slide view
 ```
+
+## Deploy
+
+Pushing a semver tag (`vX.Y.Z`) runs `make check`, builds the site and publishes it to GitHub Pages. Pushing a branch does not deploy. `make check` builds under a path prefix, as Pages serves the site, so a link that ignores the base URL fails the check.
 
 ## Slides
 
