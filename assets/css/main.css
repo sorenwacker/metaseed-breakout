@@ -131,14 +131,17 @@ main.wrap { padding-top: 2.5rem; padding-bottom: 4rem; }
 
 .slides-link { margin: 1rem 0 0; font-size: .95rem; }
 .deck { scroll-snap-type: y mandatory; }
-.slide { min-height: 100svh; scroll-snap-align: start; display: grid; grid-template-columns: 1fr 1.2fr; align-content: center; column-gap: 3rem; padding: 3rem clamp(1.5rem, 6vw, 6rem) 5rem; font-size: clamp(1.1rem, 1.9vw, 1.7rem); }
+.slide { min-height: 100svh; scroll-snap-align: start; display: grid; grid-template-columns: 1fr 1.2fr; grid-auto-flow: row dense; align-content: center; column-gap: 3rem; padding: min(3rem, 5vh) clamp(1.5rem, 6vw, 6rem) 4.5rem; font-size: clamp(1rem, min(1.9vw, 2.9vh), 1.7rem); }
 .slide > * { grid-column: 1 / -1; }
-.slide:has(figure) > ul { grid-column: 1; align-self: center; }
+.slide:has(figure) > :is(ul, ol) { grid-column: 1; align-self: center; }
 .slide:has(figure) > figure { grid-column: 2; align-self: center; margin: 0; }
 .slide h1 { font-size: clamp(2.5rem, 7vw, 5.5rem); }
-.slide h2 { font-size: clamp(1.8rem, 3.6vw, 3.2rem); margin: 0 0 1.5rem; }
+.slide h2 { font-size: clamp(1.6rem, min(3.6vw, 5.5vh), 3.2rem); margin: 0 0 1.5rem; }
 .slide ul { margin: 0; padding-left: 1.2em; }
 .slide li { margin: .6em 0; }
+.slide .cycle-list { font-size: .74em; margin: 0; }
+.slide .cycle-list li { margin: .35em 0; }
+.slide .cycle { max-width: none; justify-self: center; width: min(100%, 62vh); }
 .slide .lede { font-size: 1.2em; margin-bottom: 1.5rem; }
 .deck-bar { position: fixed; left: 0; right: 0; bottom: 0; display: flex; align-items: center; gap: 1rem; padding: .5rem 1.25rem; font-size: .88rem; color: var(--muted); background: var(--bg); border-top: 1px solid var(--line); }
 .deck-count { margin-left: auto; font-variant-numeric: tabular-nums; }

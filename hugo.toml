@@ -23,10 +23,6 @@ docs_url = "https://sorenwacker.github.io/metaseed-hub/"
     pageRef = "/presentation"
     weight = 15
   [[menus.main]]
-    name = "Cycle"
-    pageRef = "/cycle"
-    weight = 20
-  [[menus.main]]
     name = "Tracks"
     pageRef = "/tracks"
     weight = 40

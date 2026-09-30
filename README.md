@@ -25,8 +25,8 @@ The site follows the operating system's light or dark setting. The switch in the
 ## Where to edit
 
 - `data/agenda.yaml` - time slots; drives the timeline and the agenda page.
-- `data/cycle.yaml` - the six cycle steps; drives the cycle diagram.
-- `content/` - abstract, presentation, cycle text, tracks, discussion questions, preparation checklist.
+- `data/cycle.yaml` - the six cycle steps; drives the cycle diagram and step list in the presentation.
+- `content/` - abstract, presentation, tracks, discussion questions, preparation checklist.
 - `assets/images/` - screenshots, placed in a page with `{{< shot src="images/..." alt="..." caption="..." >}}`. The published file name carries a content hash, so a replaced screenshot is not served from a browser cache.
 - `assets/diagrams/` - SVG diagrams, placed in a page with `{{< diagram name="..." caption="..." >}}`.
 - `hugo.toml` - event name, duration, hub and documentation links, menu.

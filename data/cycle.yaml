@@ -9,4 +9,4 @@
 - name: Export
   body: Excel, a DCAT catalogue record, a repository submission format such as PRIDE, or a push into FAIRDOM-SEEK.
 - name: Revise
-  body: What users learn feeds a new profile version. A version-bump gate refuses a release whose version number understates a breaking change, and existing datasets stay on the version they were built with.
+  body: What users learn feeds a new profile version. A version-bump gate refuses a release whose version number understates a breaking change.

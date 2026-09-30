@@ -2,7 +2,7 @@
 title: "Metaseed: define, compare and use metadata specifications"
 linkTitle: Presentation
 eyebrow: From the fellowship
-description: What metadata and metadata specifications are, why specifications are hard to compare, what metaseed does about it, and what the fellowship taught.
+description: What metadata and metadata specifications are, why specifications are hard to compare, what metaseed does about it, the six steps the demo follows, and what the fellowship taught.
 card: true
 weight: 5
 outputs: [html, slides]
@@ -31,6 +31,12 @@ outputs: [html, slides]
 - Everyone who follows a specification records the same things, so nothing essential is left out.
 - Datasets from different groups can be combined and compared.
 - Software can check metadata against the specification, and repositories can accept it without manual rework.
+
+## Which standards do you work with?
+
+- Which metadata standards do you use today?
+- Which would you like to have available as a profile?
+- The answers go on the shared board and come back in the discussion.
 
 ## The fellowship
 
@@ -71,6 +77,21 @@ outputs: [html, slides]
 - No binary or union field types.
 - No custom code in validation rules.
 - Profiles are trees, not general graphs; the fifth lesson returns to this.
+
+## From standard to dataset and back
+
+The demo goes through these six steps once, and the no-laptop track maps participants' own workflows onto them.
+
+{{< cycle >}}
+
+## Why the last step matters
+
+- Standards change after datasets have been created with them.
+- A tool that embeds its own copy of a standard has to reimplement each change, and existing datasets break or silently diverge.
+- In Metaseed Hub the profile is the single source for forms, validation and exports.
+- A published version cannot be edited, and a dataset stays bound to the version it was created with.
+
+{{< shot src="images/spec-builder.jpg" alt="Spec builder in Metaseed Hub" caption="The spec builder: where a standard is defined, revised and published." >}}
 
 ## Lessons learned
 
